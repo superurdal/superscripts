@@ -1,0 +1,15 @@
+/* Run the following after you have mounted a SuperOffice Online DB in your test enviroment. This will prevent you from getting error messages when making changes to a user. */ 
+
+DROP TRIGGER [crm7].[associate_change] 
+DROP TRIGGER [crm7].[licenseassoclink_change] 
+DROP TRIGGER [crm7].[person_change] 
+DROP TRIGGER [crm7].[phone_change] 
+DROP TRIGGER [crm7].[email_change] 
+DROP TRIGGER [crm7].[company_change] 
+DROP TRIGGER [crm7].[userrolelink_change] 
+DROP TRIGGER [crm7].[functionrightrolelink_change] 
+DROP TRIGGER [crm7].[modulelicense_change] 
+DROP PROCEDURE [dbo].[wipeFromUserMaster] 
+DROP PROCEDURE [dbo].[resyncUserMaster] 
+DROP PROCEDURE [dbo].[removeAllFromUserMaster] 
+DROP PROCEDURE [dbo].[locallogchange] 
