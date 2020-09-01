@@ -30,7 +30,7 @@ Run the dbMerge.crmscript on the source database, adjusting variables as needed.
 <b>Merge files: </b><br> 
 Attachments: On the target database load moveAttachments.crmscript, and alter the paths as needed. Insert the attachment value from the previous step. Run it and copy/save the output. The output should be saved as a batch script, meaning you should create a .bat file on the server so that you can run it in order to rename and merge files from the attachment folder.
 
-SO_Arc: All the folders in the source SO_Arc must be renamed to <i>foldername</i>(DB_Merge). This can be done via the command line, using this command: <code><i>for /D %f in (C:\SuperOffice\SO_ARC*) do rename "%f" "%~nxf(DB_Merge)"</i></code><br>
+SO_Arc: All the folders in the source SO_Arc must be renamed to <i>foldername</i>(DB_Merge). This can be done via the command line, using this command: <code><i>for /D %f in (C:\SuperOffice\SO_ARC*) do rename "%f" "%~nxf(DB_Merge)"</i></code><br><br>
 Copy/move SO_ARC manually from source to target destination.
 
 <b>Manual steps:</b><br> 
